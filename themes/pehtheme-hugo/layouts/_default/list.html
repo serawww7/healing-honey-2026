@@ -24,7 +24,8 @@
 
   {{ if .Paginator.HasPrev }}
     <a class="border rounded-full px-4 py-2 hover:bg-zinc-200"
-       href="{{ .Paginator.Prev.URL }}">
+       href="{{ .Paginator.Prev.URL }}"
+       aria-label="Попередня сторінка">
        ←
     </a>
   {{ end }}
@@ -33,14 +34,15 @@
 
     {{ if eq . $.Paginator }}
 
-      <span class="border rounded-full px-4 py-2 bg-blue-600 text-white">
+      <span class="border rounded-full px-4 py-2 bg-blue-600 text-white" aria-current="page">
         {{ .PageNumber }}
       </span>
 
     {{ else }}
 
       <a class="border rounded-full px-4 py-2 hover:bg-zinc-200"
-         href="{{ .URL }}">
+         href="{{ .URL }}"
+         aria-label="Сторінка {{ .PageNumber }}">
          {{ .PageNumber }}
       </a>
 
@@ -50,7 +52,8 @@
 
   {{ if .Paginator.HasNext }}
     <a class="border rounded-full px-4 py-2 hover:bg-zinc-200"
-       href="{{ .Paginator.Next.URL }}">
+       href="{{ .Paginator.Next.URL }}"
+       aria-label="Наступна сторінка">
        →
     </a>
   {{ end }}

@@ -1,24 +1,41 @@
 // TOGGLE BUTTON
 (function () {
-	// Get all elements with the "toggle-button" class
     const toggleButtons = document.querySelectorAll(".toggle-button");
 
-    // Function to hide all elements except the target
-    function hideAllExcept(targetElement) {
-        document.querySelectorAll(".hidden").forEach((element) => {
-            if (element !== targetElement) {
-                element.classList.add("close"); // Hide the element
-                element.classList.remove("open"); // Close previously open elements
+    function syncExpanded(button, isOpen) {
+        button.setAttribute("aria-expanded", isOpen ? "true" : "false");
+        if (button.hasAttribute("aria-label")) {
+            button.setAttribute(
+                "aria-label",
+                isOpen ? "Закрити меню" : "Відкрити меню"
+            );
+        }
+    }
+
+    function setOpenState(targetElement, isOpen) {
+        targetElement.classList.toggle("close", !isOpen);
+        targetElement.classList.toggle("open", isOpen);
+
+        toggleButtons.forEach((button) => {
+            const targets = (button.getAttribute("data-target") || "").split(" ");
+            if (targets.includes(targetElement.id)) {
+                syncExpanded(button, isOpen);
             }
         });
     }
 
-    // Function to toggle the state of an element (open/close)
+    function hideAllExcept(targetElement) {
+        document.querySelectorAll(".open").forEach((element) => {
+            if (element !== targetElement) {
+                setOpenState(element, false);
+            }
+        });
+    }
+
     function toggleElement(targetElement) {
         const isHidden = targetElement.classList.contains("close");
         hideAllExcept(targetElement);
-        targetElement.classList.toggle("close", !isHidden);
-        targetElement.classList.toggle("open", isHidden);
+        setOpenState(targetElement, isHidden);
     }
 
     toggleButtons.forEach((button) => {
@@ -33,7 +50,6 @@
         });
     });
 
-    // Add event listener to the document to close elements when a click occurs outside of open elements
     document.addEventListener("click", function (event) {
         const targetElements = Array.from(document.querySelectorAll(".open"));
         const clickedOutsideAllTargets = targetElements.every((element) => {
@@ -42,10 +58,8 @@
 
         if (clickedOutsideAllTargets) {
             targetElements.forEach((element) => {
-                element.classList.remove("open"); // Close open elements
-                element.classList.add("close"); // Hide elements
+                setOpenState(element, false);
             });
         }
     });
-
 })();
