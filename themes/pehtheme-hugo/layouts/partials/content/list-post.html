@@ -6,12 +6,13 @@
 
 		  {{- if (strings.HasPrefix .Params.image "http") }}
 
-		  <img class="object-cover h-full w-full group-hover:scale-105 transition duration-500 cursor-pointer" src="{{ .Params.image }}" alt="{{ $.Name }}" style="width: 100%; height: 100%; object-fit: cover;" style="width: 100%; height: 100%; object-fit: cover;">
+		  <img class="object-cover h-full w-full group-hover:scale-105 transition duration-500 cursor-pointer" src="{{ .Params.image }}" alt="{{ $.Name }}" style="width: 100%; height: 100%; object-fit: cover;" decoding="async" loading="lazy">
 
 		  {{- else }}
 
 			{{- with $imglist := resources.Get .Params.image -}}
-  <img class="object-cover h-full w-full group-hover:scale-105 transition duration-500 cursor-pointer" src="{{ $imglist.RelPermalink }}" alt="{{ $.Name }}">
+			  {{- $imglist = $imglist.Fill "200x200 q85" -}}
+  <img class="object-cover h-full w-full group-hover:scale-105 transition duration-500 cursor-pointer" src="{{ $imglist.RelPermalink }}" alt="{{ $.Name }}" width="{{ $imglist.Width }}" height="{{ $imglist.Height }}" decoding="async" loading="lazy">
 {{- end }}
 
 		  {{- end }}

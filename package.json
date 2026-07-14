@@ -8,7 +8,7 @@
     "dev:hugo": "hugo server",
     "dev": "run-p dev:*",
     "build:generate": "npx tailwindcss -i ./input.css -o ./themes/pehtheme-hugo/assets/css/main.css && node ./scripts/extract-critical-css.mjs",
-    "build:hugo": "hugo",
+    "build:hugo": "hugo --minify",
     "build": "run-p build:*"
   },
   "keywords": ["hugo", "tailwindcss"],

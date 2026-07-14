@@ -66,5 +66,8 @@ posts = "/:slug/"
 
 
 
+[minify]
+  minifyOutput = true
+
 [outputs]
 home = ["HTML", "RSS", "JSON"]

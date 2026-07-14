@@ -15,13 +15,13 @@
 
 		  {{- if (strings.HasPrefix $page.Params.image "http") }}
 
-			<img class="object-cover group-hover:scale-105 transition duration-500 cursor-pointer" src="{{ $page.Params.image }}" alt="{{ $page.Name }}" style="width: 100%; height: 100%; object-fit: cover;" decoding="async"{{ if $lcp }} fetchpriority="high"{{ else }} loading="lazy"{{ end }}>
+			<img class="object-cover group-hover:scale-105 transition duration-500 cursor-pointer" src="{{ $page.Params.image }}" alt="{{ $page.Name }}" style="width: 100%; height: 100%; object-fit: cover;" decoding="async"{{ if $lcp }} loading="eager" fetchpriority="high"{{ else }} loading="lazy"{{ end }}>
 
 		  {{- else }}
 
 			{{- with $imgcard := resources.Get $page.Params.image -}}
 			  {{- $imgcard = $imgcard.Fill "640x360 q85" -}}
-  <img class="object-cover group-hover:scale-105 transition duration-500 cursor-pointer" src="{{ $imgcard.RelPermalink }}" alt="{{ $page.Name }}" width="{{ $imgcard.Width }}" height="{{ $imgcard.Height }}" decoding="async"{{ if $lcp }} fetchpriority="high"{{ else }} loading="lazy"{{ end }}>
+  <img class="object-cover group-hover:scale-105 transition duration-500 cursor-pointer" src="{{ $imgcard.RelPermalink }}" alt="{{ $page.Name }}" width="{{ $imgcard.Width }}" height="{{ $imgcard.Height }}" decoding="async"{{ if $lcp }} loading="eager" fetchpriority="high"{{ else }} loading="lazy"{{ end }}>
 {{- end }}
 
 		  {{- end }}

@@ -26,7 +26,6 @@ const KEEP = new Set([
   "block",
   "flex",
   "grid",
-  "hidden",
   "aspect-video",
   "w-full",
   "max-w-7xl",
@@ -83,8 +82,6 @@ const KEEP = new Set([
   "open",
   "hover:bg-blue-100",
   "hover:bg-zinc-200",
-  "group-hover:scale-105",
-  "group-hover:animate-spin",
   "md:px-6",
   "md:grid-cols-3",
   "md:text-4xl",
@@ -131,13 +128,35 @@ function tailwindClassToSelectorPart(name) {
 }
 
 function classInSelector(name, selector) {
-  return selector.includes(`.${tailwindClassToSelectorPart(name)}`);
+  let cssClass = "";
+  for (const ch of name) {
+    if (ch === ":") cssClass += "\\:";
+    else if (ch === "/") cssClass += "\\/";
+    else if (ch === ".") cssClass += "\\.";
+    else if (ch === "[") cssClass += "\\[";
+    else if (ch === "]") cssClass += "\\]";
+    else if (ch === "'") cssClass += "\\'";
+    else cssClass += ch;
+  }
+  const escaped = cssClass.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  return new RegExp(`\\.${escaped}(?![\\w-]|\\\\\\.)`).test(selector);
 }
+
+const GROUP_HOVER_KEEP = new Set([
+  "group-hover:scale-105",
+  "group-hover:animate-spin",
+]);
 
 function selectorMatches(selector) {
   const normalized = selector.trim();
-  if (normalized.includes("insert-link") || normalized.includes("group:hover")) {
+  if (normalized.includes("insert-link")) {
     return true;
+  }
+
+  for (const name of GROUP_HOVER_KEEP) {
+    if (classInSelector(name, normalized)) {
+      return true;
+    }
   }
 
   const tag = normalized.split(/[.:#\s[]>+~[]/)[0];

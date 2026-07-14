@@ -10,10 +10,12 @@
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-y-10 gap-x-4">
 
-      {{ range ( .Paginator 6 ).Pages }}
-      
+      {{ $pages := ( .Paginator 6 ).Pages }}
+      {{ range first 1 $pages }}
+        {{- partial "content/card.html" (dict "page" . "lcp" true) -}}
+      {{ end }}
+      {{ range after 1 $pages }}
         {{- partial "content/card.html" . -}}
-
       {{ end }}
     
     </div>

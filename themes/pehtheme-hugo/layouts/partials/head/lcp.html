@@ -1,11 +1,25 @@
 {{- if .IsHome -}}
-  {{- $posts := where site.RegularPages "Type" "in" site.Params.mainSections -}}
-  {{- with index ($posts.ByDate.Reverse) 0 -}}
-    {{- with .Params.image -}}
-      {{- if not (strings.HasPrefix . "http") -}}
-        {{- with resources.Get . -}}
-          {{- $lcpImg := .Fill "640x360 q85" -}}
+  {{- $feature := where site.RegularPages "Params.tags" "intersect" (slice "feature") | first 1 -}}
+  {{- if $feature -}}
+    {{- range $feature -}}
+      {{- with .Params.image -}}
+        {{- if not (strings.HasPrefix . "http") -}}
+          {{- with resources.Get . -}}
+            {{- $lcpImg := .Resize "720x Q85" -}}
 <link rel="preload" as="image" href="{{ $lcpImg.RelPermalink }}" fetchpriority="high">
+          {{- end -}}
+        {{- end -}}
+      {{- end -}}
+    {{- end -}}
+  {{- else -}}
+    {{- $posts := where site.RegularPages "Type" "in" site.Params.mainSections -}}
+    {{- with index ($posts.ByDate.Reverse) 0 -}}
+      {{- with .Params.image -}}
+        {{- if not (strings.HasPrefix . "http") -}}
+          {{- with resources.Get . -}}
+            {{- $lcpImg := .Fill "640x360 q85" -}}
+<link rel="preload" as="image" href="{{ $lcpImg.RelPermalink }}" fetchpriority="high">
+          {{- end -}}
         {{- end -}}
       {{- end -}}
     {{- end -}}
