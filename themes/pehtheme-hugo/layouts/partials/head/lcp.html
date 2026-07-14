@@ -1,0 +1,13 @@
+{{- if .IsHome -}}
+  {{- $posts := where site.RegularPages "Type" "in" site.Params.mainSections -}}
+  {{- with index ($posts.ByDate.Reverse) 0 -}}
+    {{- with .Params.image -}}
+      {{- if not (strings.HasPrefix . "http") -}}
+        {{- with resources.Get . -}}
+          {{- $lcpImg := .Fill "640x360 q85" -}}
+<link rel="preload" as="image" href="{{ $lcpImg.RelPermalink }}" fetchpriority="high">
+        {{- end -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}

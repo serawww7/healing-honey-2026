@@ -1,9 +1,17 @@
-{{- with resources.Get "css/main.css" }}
-  {{- if eq hugo.Environment "development" }}
+{{- with resources.Get "css/main.css" -}}
+  {{- if eq hugo.Environment "development" -}}
     <link rel="stylesheet" href="{{ .RelPermalink }}">
-  {{- else }}
-    {{- with . | minify | fingerprint }}
-      <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
-    {{- end }}
-  {{- end }}
-{{- end }}
+  {{- else -}}
+    {{- $main := . | minify | fingerprint -}}
+    {{- if $.IsHome -}}
+      {{- with resources.Get "css/critical-home.css" -}}
+        {{- $critical := . | minify -}}
+<style>{{ $critical.Content | safeCSS }}</style>
+      {{- end -}}
+<link rel="preload" href="{{ $main.RelPermalink }}" as="style" integrity="{{ $main.Data.Integrity }}" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="{{ $main.RelPermalink }}" integrity="{{ $main.Data.Integrity }}" crossorigin="anonymous"></noscript>
+    {{- else -}}
+<link rel="stylesheet" href="{{ $main.RelPermalink }}" integrity="{{ $main.Data.Integrity }}" crossorigin="anonymous">
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
