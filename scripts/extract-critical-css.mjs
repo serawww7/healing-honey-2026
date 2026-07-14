@@ -75,7 +75,7 @@ const KEEP = new Set([
   "font-bold",
   "uppercase",
   "leading-normal",
-  "text-zinc-500",
+  "text-zinc-600",
   "transition",
   "duration-500",
   "close",

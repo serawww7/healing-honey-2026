@@ -688,9 +688,9 @@ video {
 .leading-normal{
   line-height: 1.5;
 }
-.text-zinc-500{
+.text-zinc-600{
   --tw-text-opacity: 1;
-  color: rgb(113 113 122 / var(--tw-text-opacity));
+  color: rgb(82 82 91 / var(--tw-text-opacity));
 }
 .transition{
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
