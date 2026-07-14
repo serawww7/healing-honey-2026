@@ -4,7 +4,7 @@ title: "Як очистити прополіс від домішок: правд
 date: 2026-06-17T10:00:00+03:00
 slug: "yak-ochystyty-propolis-vid-domishok"
 description: "Чи потрібно очищати прополіс у домашніх умовах? Чому професійні пасічники не рекомендують купувати очищений прополіс та як відрізнити корисні домішки від небезпечної хімії."
-image: images/yak-ochystyty-propolis-vid-domishok.jpg
+image: images/yak-ochystyty-propolis-vid-domishok.webp
 tags:
 
  - прополіс

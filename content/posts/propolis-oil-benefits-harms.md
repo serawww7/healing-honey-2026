@@ -4,7 +4,7 @@ title: "Прополісна олія: Користь та можлива шко
 date: 2025-04-16T10:00:00+03:00
 slug: "propolis-oil-benefits-harms"
 description: "Розширений огляд цілющих властивостей прополісної олії, а також потенційних ризиків та протипоказань для безпечного використання."
-image: images/propolis-oil-benefits-harms.jpg
+image: images/propolis-oil-benefits-harms.webp
 tags:
 
  - прополіс

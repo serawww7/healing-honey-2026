@@ -4,7 +4,7 @@ title: "Як приготувати крем-мед з прополісом вд
 date: 2025-05-21T10:00:00+03:00
 slug: "krem-med-z-propolisom"
 description: "Робимо елітний крем-мед (збитий мед) своїми руками. Домашній рецепт з додаванням прополісу для імунітету. Поради бджоляра щодо правильного збивання меду."
-image: images/krem-med-z-propolisom.jpg
+image: images/krem-med-z-propolisom.webp
 tags:
 
  - прополіс

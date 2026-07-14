@@ -4,7 +4,7 @@ title: "Молоко з прополісом від кашлю: правильн
 date: 2026-03-02T10:00:00+03:00
 slug: "moloko-z-propolisom-vid-kashliu"
 description: "Перевірений народний засіб від кашлю, бронхіту та застуди — тепле молоко з прополісом. Покроковий рецепт приготування, дозування для дітей та дорослих, поради пасічника."
-image: images/moloko-z-propolisom-vid-kashliu.jpg
+image: images/moloko-z-propolisom-vid-kashliu.webp
 tags:
 
  - прополіс

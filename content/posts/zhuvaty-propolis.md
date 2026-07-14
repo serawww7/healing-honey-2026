@@ -4,7 +4,7 @@ title: "🐝 Скільки можна жувати прополіс: помил
 date: 2025-03-14T10:00:00+03:00
 slug: "zhuvaty-propolis"
 description: "використай мій досвід і не поторюй моєї помилки, жувати прополіс треба дуже і дуже обережно"
-image: images/zhuvaty-propolis.jpg
+image: images/zhuvaty-propolis.webp
 caption: 🐝 Жувати прополіс? - е ні, дякую.
 tags:
  - бабусині рецепти

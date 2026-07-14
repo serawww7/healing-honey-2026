@@ -4,7 +4,7 @@ title: "Еліксир прополісу"
 date: 2025-09-17T10:00:00+03:00
 slug: "propolis-moon"
 description: "Корисний засіб для імунітету та шлунково-кишкового тракту."
-image: images/propolis-moon.jpg
+image: images/propolis-moon.webp
 tags:
 
  - прополіс

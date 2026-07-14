@@ -4,7 +4,7 @@ title: "Прополісний мед: покрокове приготуванн
 date: 2025-07-01T10:00:00+03:00
 slug: "propolisnyi-med-pryhotuvannia"
 description: "Як правильно приготувати прополісний мед своїми руками. Перевірений рецепт з пропорціями, лікувальні властивості бджолиного клею з медом та інструкція як приймати."
-image: images/propolisnyi-med-pryhotuvannia.jpg
+image: images/propolisnyi-med-pryhotuvannia.webp
 tags:
 
  - прополіс

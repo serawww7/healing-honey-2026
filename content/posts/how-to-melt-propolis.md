@@ -4,7 +4,7 @@ title: "Нестабільний розчин на воді"
 date: 2025-08-05T10:00:00+03:00
 slug: "Unstable-water"
 description: "Покроковий посібник з безпечного та ефективного розтоплення прополісу для подальшого використання у лікувальних цілях."
-image: images/Unstable-water.jpg
+image: images/Unstable-water.webp
 tags:
 
  - прополіс

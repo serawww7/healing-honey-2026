@@ -4,7 +4,7 @@ title: "Воскова мазь з прополісом в домашніх ум
 date: 2026-03-02T10:00:00+03:00
 slug: "voskova-maz-z-propolisom-v-domashnikh-umovakh"
 description: "Як самостійно приготувати лікувальну мазь на основі бджолиного воску та прополісу. Перевірений домашній рецепт, пропорції, властивості та від чого допомагає."
-image: images/voskova-maz-z-propolisom-v-domashnikh-umovakh.jpg
+image: images/voskova-maz-z-propolisom-v-domashnikh-umovakh.webp
 tags:
 
  - прополіс

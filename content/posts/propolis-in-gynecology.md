@@ -4,7 +4,7 @@ title: "Прополіс в гінекології 🌸"
 date: 2026-03-06T10:00:00+03:00
 slug: "propolis-in-gynecology"
 description: "Огляд застосування прополісу в гінекології: його корисні властивості для жіночого здоров'я, форми використання та важливі застереження."
-image: images/propolis-in-gynecology.jpg
+image: images/propolis-in-gynecology.webp
 tags:
 
  - прополіс

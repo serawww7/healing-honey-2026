@@ -7,7 +7,7 @@ description: "Чи допомагає прополіс при гастриті?
 Скільки крапель прополісу пити для шлунка?
 Чи можна пити прополіс натщесерце?
 Прополіс з молоком для шлунка: користь чи шкода?"
-image: images/yak-pyty-vid-shlunka.jpg
+image: images/yak-pyty-vid-shlunka.webp
 
 
 draft: false

@@ -4,7 +4,7 @@ title: "Чому прополіс іноді не допомагає? Думка
 date: 2026-07-12T10:00:00+03:00
 slug: "inodi-ne-dopomahaie"
 description: "Чому прополіс не завжди дає бажаний результат? Пасічник із 15-річним досвідом пояснює, чому проблема часто не в прополісі, а в неправильному підході до власного здоров'я."
-image: images/inodi-ne-dopomahaie.jpg
+image: images/inodi-ne-dopomahaie.webp
 tags:
 
  - прополіс

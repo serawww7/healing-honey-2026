@@ -4,7 +4,7 @@ title: "Як я за один сезон майже втратив усю пас
 date: 2026-06-06T10:00:00+03:00
 slug: "vtratyv-pasiku"
 description: "Історія про сезон, після якого на моїй пасіці майже не залишилося бджіл, і про несподівану допомогу, яка повернула надію."
-image: images/vtratyv-pasiku.jpg
+image: images/vtratyv-pasiku.webp
 tags:
 
  - прополіс

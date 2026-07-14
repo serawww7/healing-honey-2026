@@ -4,7 +4,7 @@ title: "Настойка прополісу на спирту"
 date: 2026-04-25T10:00:00+03:00
 slug: "nastoyka-propolisu-na-spyrtu"
 description: "Покроковий рецепт настойки прополісу на спирту, пропорції, спосіб приготування, правила зберігання та застосування."
-image: images/nastoyka-propolisu-na-spyrtu.jpg
+image: images/nastoyka-propolisu-na-spyrtu.webp
 caption: на спирту
 tags:
 

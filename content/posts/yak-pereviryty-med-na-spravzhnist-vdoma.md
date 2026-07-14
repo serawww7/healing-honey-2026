@@ -4,7 +4,7 @@ title: "Як перевірити мед на справжність вдома:
 date: 2026-03-02T10:00:00+03:00
 slug: "yak-pereviryty-med-na-spravzhnist-vdoma"
 description: "Перевірені методи від пасічника: як швидко відрізнити справжній мед від підробки в домашніх умовах. Тести з йодом, водою, папером та хімічним олівцем."
-image: images/yak-pereviryty-med-na-spravzhnist-vdoma.jpg
+image: images/yak-pereviryty-med-na-spravzhnist-vdoma.webp
 tags:
 
  - прополіс

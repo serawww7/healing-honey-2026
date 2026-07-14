@@ -4,7 +4,7 @@ title: "Прополіс що лікує 🐝"
 date: 2025-12-28T10:00:00+03:00
 slug: "what-propolis-treats"
 description: "Огляд широкого спектра захворювань, при яких прополіс може бути ефективним завдяки своїм унікальним цілющим властивостям."
-image: images/what-propolis-treats.jpg
+image: images/what-propolis-treats.webp
 tags:
 
  - прополіс

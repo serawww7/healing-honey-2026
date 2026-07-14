@@ -4,7 +4,7 @@ title: "Як розчинити прополіс в оливковій олії:
 date: 2025-08-14T10:00:00+03:00
 slug: "yak-rozchynyty-propolis-v-olyvkovii-olii"
 description: "Покрокова інструкція, як правильно розчинити прополіс в оливковій олії на водяній бані. Пропорції, лікувальні властивості та застосування для шлунка, носа й шкіри."
-image: images/yak-rozchynyty-propolis-v-olyvkovii-olii.jpg
+image: images/yak-rozchynyty-propolis-v-olyvkovii-olii.webp
 tags:
 
  - прополіс

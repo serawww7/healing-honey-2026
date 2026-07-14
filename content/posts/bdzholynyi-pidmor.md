@@ -4,7 +4,7 @@ title: "Бджолиний підмор: лікувальні властивос
 date: 2026-02-22T10:00:00+03:00
 slug: "bdzholynyi-pidmor"
 description: "Що лікує бджолиний підмор та як приготувати цілющу спиртову настоянку або мазь вдома. Покрокові рецепти від пасічника, користь для суглобів та судин."
-image: images/bdzholynyi-pidmor.jpg
+image: images/bdzholynyi-pidmor.webp
 tags:
 
  - прополіс

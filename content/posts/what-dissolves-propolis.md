@@ -4,7 +4,7 @@ title: "В чому розчиняється прополіс? 🧪"
 date: 2025-02-14T10:00:00+03:00
 slug: "V-chomu-rozchyniaietsia-propolis"
 description: "Дізнайтеся, які речовини найкраще розчиняють прополіс для приготування лікувальних засобів, та які компоненти при цьому екстрагуються."
-image: images/v-chomu-rozchyniaietsia-propolis.jpg
+image: images/v-chomu-rozchyniaietsia-propolis.webp
 tags:
 
  - прополіс

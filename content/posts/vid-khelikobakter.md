@@ -4,7 +4,7 @@ title: "Прополіс від хелікобактер: що відомо пр
 date: 2025-04-20T10:00:00+03:00
 slug: "vid-khelikobakter"
 description: "Helicobacter pylori (хелікобактер) — одна з найвідоміших бактерій, пов'язаних із захворюваннями шлунка. Саме тому багато людей шукають інформацію про те, чи можна використовувати прополіс при хелікобактері та як його правильно вживати."
-image: images/vid-khelikobakter.jpg
+image: images/vid-khelikobakter.webp
 tags:
 
  - прополіс

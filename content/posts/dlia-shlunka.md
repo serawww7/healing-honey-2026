@@ -4,7 +4,7 @@ title: "Прополіс від печії"
 date: 2025-06-07T10:00:00+03:00
 slug: "dlia-shlunka"
 description: "Корисний засіб для імунітету та шлунково-кишкового тракту."
-image: images/dlia-shlunka.jpg
+image: images/dlia-shlunka.webp
 tags:
 
  - прополіс

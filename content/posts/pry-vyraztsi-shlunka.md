@@ -4,7 +4,7 @@ title: "Прополіс при виразці шлунка"
 date: 2025-06-27T10:00:00+03:00
 slug: "pry-vyraztsi-shlunka"
 description: "Корисний засіб для імунітету та шлунково-кишкового тракту."
-image: images/pry-vyraztsi-shlunka.jpg
+image: images/pry-vyraztsi-shlunka.webp
 tags:
 
  - прополіс

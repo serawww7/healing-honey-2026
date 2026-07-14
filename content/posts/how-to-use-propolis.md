@@ -4,7 +4,7 @@ title: "Як правильно вживати прополіс️"
 date: 2025-11-10T10:00:00+03:00
 slug: "how-to-use-propolis"
 description: "Дізнайтеся про безпечні та ефективні способи вживання прополісу для максимальної користі без ризику для здоров'я."
-image: images/how-to-use-propolis.jpg
+image: images/how-to-use-propolis.webp
 tags:
 
  - прополіс

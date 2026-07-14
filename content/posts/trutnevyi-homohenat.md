@@ -4,7 +4,7 @@ title: "Трутневий гомогенат (молочко): користь, 
 date: 2026-03-02T10:00:00+03:00
 slug: "trutnevyi-homohenat"
 description: "Що таке трутневий гомогенат (молочко) та чим він корисний для чоловіків і жінок. Склад, лікувальні властивості, інструкція із застосування та правила зберігання."
-image: images/trutnevyi-homohenat.jpg
+image: images/trutnevyi-homohenat.webp
 tags:
 
  - прополіс

@@ -4,7 +4,7 @@ title: "Прополісний мед"
 date: 2025-09-01T10:00:00+03:00
 slug: "propolis-honey-preparation"
 description: "Дізнайтеся, як приготувати прополісний мед в домашніх умовах та які цілющі властивості він має."
-image: images/propolis-honey-preparation.jpg
+image: images/propolis-honey-preparation.webp
 tags:
 
  - прополіс
