@@ -51,13 +51,13 @@
 
         {{- if ( strings.HasPrefix .Params.image "http" ) }}
 
-          <img class="rounded-lg" src="{{ .Params.image }}" alt="{{ .Params.title }}" decoding="async" loading="eager" fetchpriority="high">
+          <img class="rounded-lg" src="{{ .Params.image }}" alt="{{ .Title }}" decoding="async" loading="eager" fetchpriority="high">
 
         {{- else }}
 
           {{- with $image := resources.Get .Params.image }}
             {{- $image := $image.Resize "750x" }}
-            <img class="rounded-lg" src="{{ $image.Permalink }}" alt="{{ .Params.title }}" width="{{ $image.Width }}" height="{{ $image.Height }}" decoding="async" loading="eager" fetchpriority="high">
+            <img class="rounded-lg" src="{{ $image.Permalink }}" alt="{{ $.Title }}" width="{{ $image.Width }}" height="{{ $image.Height }}" decoding="async" loading="eager" fetchpriority="high">
           {{- end }}
 
         {{- end }}

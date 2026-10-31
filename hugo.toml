@@ -1,73 +1,63 @@
 baseURL = 'https://healing-honey.pp.ua/'
-languageCode = 'uk-UA'
+locale = 'uk-UA'
 defaultContentLanguage = "uk"
 title = 'Цілющий мед | Блог пасічника Сергія Поліщука'
 theme = 'pehtheme-hugo'
 disableKinds = ["taxonomy", "term"]
-summaryLength = '20' # <- 20 words are approximately 160 characters
-googleAnalytics = 'G-MEASUREMENT_ID' # <- Your GA-4
-disqusShortname = 'your-disqus-shortname' # <- Get form here : https://disqus.com
+summaryLength = 20
 
 [params]
-	# Meta description, not exceeding 160 characters, used for the meta description within the HTML head
 	description = 'Блог пасічника Сергія Поліщука про прополіс, мед, настоянки та практичний досвід бджільництва.'
-	mainSections = 'posts'
-
-[author]
-	name = 'Сергій Поліщук'
-	bio = 'Пасічник з власною життєвою філософією'
-	avatar = '/images/PSV.jpg'
-	
+	mainSections = ['posts']
+	[params.author]
+		name = 'Сергій Поліщук'
+		bio = 'Пасічник з власною життєвою філософією'
+		avatar = 'images/PSV.jpg'
 
 [pagination]
-	pagerSize = 6 # <- Set the desired number of posts per page 
+	pagerSize = 6
 
-[menu] # Menu management
+[menu]
 	[[menu.main]]
-name = 'Головна'
-pageRef = '/'
-weight = 10
+	name = 'Головна'
+	pageRef = '/'
+	weight = 10
 
-[[menu.main]]
-name = 'Про автора'
-pageRef = '/about'
-weight = 20
+	[[menu.main]]
+	name = 'Про автора'
+	pageRef = '/about'
+	weight = 20
 
-[[menu.main]]
-name = 'Контакти'
-pageRef = '/contact'
-weight = 30
+	[[menu.main]]
+	name = 'Контакти'
+	pageRef = '/contact'
+	weight = 30
 
-[[menu.main]]
-name = 'Політика'
-pageRef = '/privacy-policy'
-weight = 40
-
+	[[menu.main]]
+	name = 'Політика'
+	pageRef = '/privacy-policy'
+	weight = 40
 
 [module]
   [module.hugoVersion]
     extended = false
     min = "0.116.0"
-  [module.mounts] # Directing the static folder to assets.
-  	source = 'assets'
-  	target = 'static'
-	
 
-
-
-
-	[permalinks]
-posts = "/:slug/"
+[permalinks]
+  posts = "/:slug/"
 
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
 
-
-
 [minify]
   minifyOutput = true
 
 [outputs]
-home = ["HTML", "RSS", "JSON"]
+  home = ["HTML", "RSS", "JSON"]
+
+[sitemap]
+  changefreq = 'weekly'
+  priority = 0.5
+  filename = 'sitemap.xml'

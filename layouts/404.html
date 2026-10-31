@@ -1,0 +1,30 @@
+{{ define "main" }}
+<div class="max-w-6xl mx-auto py-12">
+  <div class="text-center mb-16">
+    <img
+      src="/images/404-pasika.jpg"
+      alt="Пасіка Сергія Поліщука"
+      class="w-full max-w-4xl mx-auto rounded-3xl shadow-lg mb-8"
+      width="1200"
+      height="675"
+      decoding="async"
+      loading="eager">
+    <h1 class="text-4xl md:text-6xl font-bold mb-6">Рій полетів не туди</h1>
+    <p class="text-xl text-zinc-600 max-w-3xl mx-auto mb-8">
+      Сторінка, яку ви шукаєте, не знайдена. Але не хвилюйтеся — на пасіці ще багато цікавого.
+    </p>
+    <a href="{{ site.Home.RelPermalink }}"
+       class="inline-block px-8 py-4 rounded-2xl bg-yellow-400 hover:bg-yellow-500 font-bold text-lg">
+      Повернутися на головну
+    </a>
+  </div>
+  <div>
+    <h2 class="text-3xl font-bold mb-8 text-center">Останні дописи</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      {{ range first 6 (where site.RegularPages "Type" "in" site.Params.mainSections) }}
+        {{ partial "content/card.html" . }}
+      {{ end }}
+    </div>
+  </div>
+</div>
+{{ end }}
