@@ -48,3 +48,15 @@ Installed `qiaomu-seo` (`npx skills add joeseesun/qiaomu-seo`) and ran a technic
 - Do not restore `content/404.md`: in Hugo 0.164 it prevents `public/404.html` from being emitted.
 - Home pagination must call `.Paginate` with the same args in `head.html` and `home.html`.
 - Redeploy `public/` (or CI build) for changes to become live.
+
+## 2026-11-01 — TikTok embed nickname
+
+### Summary
+Updated TikTok sidebar embed nickname from `@coach.sergiy` to `@sergiy_polishchuk_ua`.
+
+### Modified files
+- `themes/pehtheme-hugo/layouts/partials/content/aside-banner.html`
+- `docs/development.md`
+
+### Notes
+Video id unchanged (`7238259674942950661`). Site rebuilt with `hugo --minify`.
