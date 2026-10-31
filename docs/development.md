@@ -60,3 +60,15 @@ Updated TikTok sidebar embed nickname from `@coach.sergiy` to `@sergiy_polishchu
 
 ### Notes
 Video id unchanged (`7238259674942950661`). Site rebuilt with `hugo --minify`.
+
+## 2026-11-01 — Fix Cloudflare Pages deploy
+
+### Summary
+Push to GitHub succeeded, but Cloudflare Pages build failed on Hugo `0.116.0` because `site.Language.Locale` is unavailable. Restored `LanguageCode` / `languageCode`, set Pages `HUGO_VERSION=0.164.0`, removed tracked `.agents` from the repo.
+
+### Modified files
+- `themes/pehtheme-hugo/layouts/_default/baseof.html`
+- `hugo.toml`
+- `.gitignore`
+- Cloudflare Pages env `HUGO_VERSION`
+- `docs/development.md`

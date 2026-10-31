@@ -1,0 +1,9 @@
+.hugo_build.lock
+node_modules/
+resources/_gen/
+public_test/
+.agents/
+.wrangler/
+*.log
+.DS_Store
+Thumbs.db
